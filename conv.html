@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="Index.html">Home</a>
+    <div class="container">
+        <h2>Conversor de Longitud</h2>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" placeholder="Ingrese valor" min="0">
+
+        <br>
+
+        <label for="from">De:</label>
+        <select id="from">
+            <option value="m">Metros</option>
+            <option value="cm">Centímetros</option>
+            <option value="km">Kilómetros</option>
+            <option value="in">Pulgadas</option>
+        </select>
+
+        <label for="to">A:</label>
+        <select id="to">
+            <option value="m">Metros</option>
+            <option value="cm">Centímetros</option>
+            <option value="km">Kilómetros</option>
+            <option value="in">Pulgadas</option>
+        </select>
+
+        <br>
+
+        <button onclick="convertir()">Convertir</button>
+
+        <h3 id="resultado"></h3>
+    </div>
+</body>
+</html>

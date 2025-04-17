@@ -1,0 +1,144 @@
+.calcu{
+    text-align: center;
+    margin: 0;
+    background: #353C35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#calculator{
+    width: auto;
+    height: auto;
+    background-color: #0d1b2a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+}
+
+#display{
+    width: 100%;
+    height: 56px;
+    font-size: 20px;
+    text-align: right;
+    margin-left: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    color: #e0e1dd;
+    background-color: rgba(13, 27, 42, 0.3);
+    border: none;
+    box-sizing: border-box;
+}
+
+.operator{
+    color: #219ebc;
+}
+
+#ac{
+    color: #E6193C;
+}
+
+#de{
+    color: #C35C89;
+}
+.equal{
+    width: calc(50% - 10px);
+    background-color:   #24E529 ;
+    color: #e0e1dd;
+}
+
+button{
+    width: calc(25% - 10px);
+    height: 50px;
+    font-size: 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    float: left;
+    background-color: rgb(13, 27, 42);
+    color: #e0e1dd;
+    -webkit-box-shadow: -1px 1px 30px -5px rgba(0,0,0,0.2);
+    -moz-box-shadow: -1px 1px 30px -5px rgba(0,0,0,0.2);
+    box-shadow: -1px 1px 30px -5px rgba(0,0,0,0.2);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(1.05);
+    box-shadow: 0 24px 4px 1px rgba(0, 0, 0, 0.19),
+    0 1.5px rgba(0, 0, 0, 0.23);
+}
+
+
+header {
+    background-color: #1e1e2f;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+}
+.logo a{
+    color:white;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;}
+
+a:hover {
+    color: #00ffff; /* un azul neón chill para el efecto hover */
+  }
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.logo img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+    
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #00ffff; /* un azul neón chill para el efecto hover */
+  }
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
